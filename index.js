@@ -13,20 +13,13 @@ const questions = [
   {
     type: "input",
     name: "repo",
-    message: "Enter your repository name:",
-    validate: (repoInput) => {
-      if (repoInput) {
-        return true;
-      } else {
-        console.log("Please enter your GitHub repository name!");
-        return false;
-      }
-    },
+    message: "Enter your GitHub repository name for GitHub badges. Defaults to",
+    default: "simple-readme-generator"
   },
   {
     type: "input",
     name: "title",
-    message: "Enter your project title:",
+    message: "Enter your project title. Defaults to (GitHib repo name)"
   },
   {
     type: "list",
@@ -38,15 +31,8 @@ const questions = [
   {
     type: "input",
     name: "github",
-    message: "Enter your GitHub username:",
-    validate: (githubInput) => {
-      if (githubInput) {
-        return true;
-      } else {
-        console.log("Please enter your GitHub username!");
-        return false;
-      }
-    },
+    message: "Enter your GitHub username. Defaults to",
+    default: "stevelab1"
   },
 ];
 
