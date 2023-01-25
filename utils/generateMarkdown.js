@@ -82,12 +82,7 @@ function generateMarkdown(userAnswers) {
 
   `;
 
-  const creditsSection = `## Credits
-
-  ${userAnswers.github}
-
-  `;
-
+  
   draftReadme += topSection;
   draftReadme += tOC;
   draftReadme += installationSection;
@@ -96,7 +91,6 @@ function generateMarkdown(userAnswers) {
   draftReadme += testSection;
   draftReadme += questionsSection;
   draftReadme += licenseSection;
-  draftReadme += creditsSection;
   // Return README markdown
   return draftReadme;
 }
