@@ -1,9 +1,10 @@
-# simple-readme-generator
+# Simple Sample Project
   [![GitHub license](https://img.shields.io/github/license/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/blob/master/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/stargazers)
+  ![GitHub top language](https://img.shields.io/github/languages/top/undefined/simple-readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/undefined/simple-readme-generator?style=flat&logo=appveyor)
   
   ## Description 
-  a
+  Simple sample project for simple sample readme
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,21 +19,21 @@
 
   ## Usage
 
-  a
+  node index.js
 
   ## Contributing
 
-  a
+  See Contributing.md
 
   ## Tests
 
-  a
+  npm test
 
   ## Questions
 
   If you have any questions about the repo, open an issue or contact me directly at:
 
-  a
+  sample@gmail.com
 
   ## License
 
