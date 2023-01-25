@@ -1,7 +1,7 @@
 # Simple Sample Project
   [![GitHub license](https://img.shields.io/github/license/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/blob/master/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/stargazers)
-  ![GitHub top language](https://img.shields.io/github/languages/top/undefined/simple-readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/undefined/simple-readme-generator?style=flat&logo=appveyor)
+  ![GitHub top language](https://img.shields.io/github/languages/top/stevelab1/simple-readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/stevelab1/simple-readme-generator?style=flat&logo=appveyor)
   
   ## Description 
   Simple sample project for simple sample readme
@@ -41,6 +41,6 @@
 
   ## Credits
 
-  stevelab1
+  undefined
 
   

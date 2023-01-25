@@ -5,14 +5,14 @@ const path = require("path");
 const inquirer = require("inquirer");
 //  - local
 const generateMarkdown = require("./utils/generateMarkdown");
-const getGitHub = require("./utils/getGitHub.js");
+const gitHubAPI = require("./utils/getGitHub.js");
 
 let title = "";
 
 const questions = [
   {
     type: "input",
-    name: "github",
+    name: "username",
     message: "Enter your GitHub username:",
     // message: "Enter your GitHub username. Defaults to",
     default: "stevelab1",
@@ -153,17 +153,34 @@ function writeToFile(fileName, data) {
 }
 
 // initialize program function
+// function init() {
+//   inquirer.prompt(questions).then((userAnswers) => {
+//     console.log("Generating.... Please wait....");
+//     if (userAnswers.titleOption.includes("repo")) {
+//       userAnswers.title = userAnswers.repo;
+//     }
+//     if (userAnswers.title === "") {
+//       userAnswers.title = userAnswers.repo;
+//     }
+
+//     writeToFile("./generated/README.md", generateMarkdown({ ...userAnswers }));
+//   });
+// }
+
 function init() {
   inquirer.prompt(questions).then((userAnswers) => {
-    console.log("Generating.... Please wait....");
-    if (userAnswers.titleOption.includes("repo")) {
-      userAnswers.title = userAnswers.repo;
-    }
-    if (userAnswers.title === "") {
-      userAnswers.title = userAnswers.repo;
-    }
+      console.log("Generating.... Please wait....");
 
-    writeToFile("./generated/README.md", generateMarkdown({ ...userAnswers }));
+      if (userAnswers.titleOption.includes("repo")) {
+        userAnswers.title = userAnswers.repo;
+      }
+      if (userAnswers.title === "") {
+        userAnswers.title = userAnswers.repo;
+      }
+
+      gitHubAPI(userAnswers).then((gitData) => {
+          writeToFile("./generated/README.md", generateMarkdown({ ...userAnswers, gitData }));
+      });
   });
 }
 
