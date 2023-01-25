@@ -1,65 +1,73 @@
-const toc = require('markdown-it-table-of-contents');
-const markdownIt = require('markdown-it');
-
 // function to generate markdown for README
 function generateMarkdown(userAnswers) {
-  let draftReadme = '';
+  let draftReadme = "";
 
-  // if (userAnswers.title === '') {
-  //   userAnswers.title = userAnswers.repo
-  // }
-  
-  const topSection = 
-  `# ${userAnswers.title}
+  const topSection = `# ${userAnswers.title}
   [![GitHub license](https://img.shields.io/github/license/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/blob/master/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/stargazers)
-
+  
   ## Description 
   ${userAnswers.description}
 
-  ## Table of contents
-
-  ${markdownIt().use(toc).render(`
-  ${userAnswers.installation !== '' ? `## Installation\n ${userAnswers.installation}`:''}
-  ${userAnswers.usage !== '' ? `## Usage\n ${userAnswers.usage}`:''} 
-  ${userAnswers.contributing !== '' ? `## Contributing\n ${userAnswers.contributing}`:''} 
-  ${userAnswers.tests !== '' ? `## Tests\n ${userAnswers.tests}`:''} 
-  
-  ${userAnswers.questions!== ''? `## Questions\n ${userAnswers.questions}`:''}
-  ${userAnswers.license!== ''? `## License\n ${userAnswers.license}`:''}
-  `)}
   `;
-  
-  const installationSection = 
-  `## Installation
+
+  let tOC = `## Table of Contents`;
+
+  if (userAnswers.installation !== "") {
+    tOC += `
+  * [Installation](#installation)`;
+  };
+
+  if (userAnswers.usage !== "") {
+    tOC += `
+  * [Usage](#usage)`;
+  };
+
+  if (userAnswers.contributing !== "") {
+    tOC += `
+  * [Contributing](#contributing)`;
+  };
+
+  if (userAnswers.tests !== "") {
+    tOC += `
+  * [Tests](#tests)`;
+  };
+
+  if (userAnswers.questions !== "") {
+    tOC += `
+  * [Questions](#questions)`;
+  };
+
+  if (userAnswers.license !== "") {
+    tOC += `
+  * [License](#license) \n`;
+  };
+
+  const installationSection = `## Installation
 
   ${userAnswers.installation}
 
   `;
 
-  const usageSection = 
-  `## Usage
+  const usageSection = `## Usage
 
   ${userAnswers.usage}
 
   `;
 
-  const contributingSection = 
-  `## Contributing
+  const contributingSection = `## Contributing
 
   ${userAnswers.contributing}
 
   `;
 
-  const testSection = 
-  `## Tests
+  const testSection = `## Tests
 
   ${userAnswers.tests}
 
   `;
 
-  const questionsSection = 
-  `## Questions
+  const questionsSection = `## Questions
 
   If you have any questions about the repo, open an issue or contact me directly at:
 
@@ -67,21 +75,20 @@ function generateMarkdown(userAnswers) {
 
   `;
 
-  const licenseSection = 
-  `## License
+  const licenseSection = `## License
 
   This project is licensed under the ${userAnswers.license} license.
 
   `;
 
-  const creditsSection = 
-  `## Credits
+  const creditsSection = `## Credits
 
   ${userAnswers.github}
 
   `;
 
   draftReadme += topSection;
+  draftReadme += tOC;
   draftReadme += installationSection;
   draftReadme += usageSection;
   draftReadme += contributingSection;
