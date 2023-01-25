@@ -10,7 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.2.3",
-    "inquirer": "^8.2.5"
+    "inquirer": "^8.2.5",
+    "markdown-it": "^13.0.1",
+    "markdown-it-table-of-contents": "^0.6.0"
   },
   "keywords": [],
   "repository": {

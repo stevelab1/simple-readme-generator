@@ -1,3 +1,6 @@
+const toc = require('markdown-it-table-of-contents');
+const markdownIt = require('markdown-it');
+
 // function to generate markdown for README
 function generateMarkdown(userAnswers) {
   let draftReadme = '';
@@ -10,10 +13,21 @@ function generateMarkdown(userAnswers) {
   `# ${userAnswers.title}
   [![GitHub license](https://img.shields.io/github/license/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/blob/master/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/stargazers)
-  
+
   ## Description 
   ${userAnswers.description}
 
+  ## Table of contents
+
+  ${markdownIt().use(toc).render(`
+  ${userAnswers.installation !== '' ? `## Installation\n ${userAnswers.installation}`:''}
+  ${userAnswers.usage !== '' ? `## Usage\n ${userAnswers.usage}`:''} 
+  ${userAnswers.contributing !== '' ? `## Contributing\n ${userAnswers.contributing}`:''} 
+  ${userAnswers.tests !== '' ? `## Tests\n ${userAnswers.tests}`:''} 
+  
+  ${userAnswers.questions!== ''? `## Questions\n ${userAnswers.questions}`:''}
+  ${userAnswers.license!== ''? `## License\n ${userAnswers.license}`:''}
+  `)}
   `;
   
   const installationSection = 

@@ -95,12 +95,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "dependencies",
-    message: "Any dependencies to install?",
-    default: "npm i",
-  },
-  {
-    type: "input",
     name: "usage",
     message: "Enter the usage instructions for your project:",
     validate: (usageInput) => {
