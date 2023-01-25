@@ -129,7 +129,7 @@ Issues on GitHub are used to track todos, bugs, feature requests, and more.
 
 1. `git add -A && git commit -m "My message"` (replacing `My message` with a succinct but meaningful commit message, such as `Fixed card header on iPhone 5SE`) to stage and commit your changes
 1. Follow GitHub's instructions on how to push your changes to GitHub, for example with `git push origin my-branch`
-1. Go to the [weather-pickmeup repo](https://github.com/stevelab1/weather-pickmeup) and you should see recently pushed branches
+1. Go to the [simple-readme-generator repo](https://github.com/stevelab1/simple-readme-generator) and you should see recently pushed branches
 1. Follow GitHub's instructions
 1. If possible, include screenshots of visual changes. A preview build is triggered after your changes are pushed to GitHub (I will test this after adding index.html and test-deploy to GitHub Pages)
 
