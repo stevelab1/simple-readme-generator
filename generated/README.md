@@ -6,7 +6,7 @@
   [![GitHub contributors](https://img.shields.io/github/contributors/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/graphs/contributors)
   [![GitHub issues](https://img.shields.io/github/issues/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/issues)
   [![GitHub pull requests](https://img.shields.io/github/issues-pr/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/pulls)
-  [![GitHub package version](https://img.shields.io/github/package-json/v/stevelab1/simple-readme-generator)
+  ![GitHub package version](https://img.shields.io/github/package-json/v/stevelab1/simple-readme-generator)
   
   ## Description 
   Sample description

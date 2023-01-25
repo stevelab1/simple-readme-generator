@@ -10,7 +10,7 @@ function generateMarkdown(userAnswers, gitData) {
   [![GitHub contributors](https://img.shields.io/github/contributors/${userAnswers.username}/${userAnswers.repo})](https://github.com/${userAnswers.username}/${userAnswers.repo}/graphs/contributors)
   [![GitHub issues](https://img.shields.io/github/issues/${userAnswers.username}/${userAnswers.repo})](https://github.com/${userAnswers.username}/${userAnswers.repo}/issues)
   [![GitHub pull requests](https://img.shields.io/github/issues-pr/${userAnswers.username}/${userAnswers.repo})](https://github.com/${userAnswers.username}/${userAnswers.repo}/pulls)
-  [![GitHub package version](https://img.shields.io/github/package-json/v/${userAnswers.username}/${userAnswers.repo})
+  ![GitHub package version](https://img.shields.io/github/package-json/v/${userAnswers.username}/${userAnswers.repo})
   
   ## Description 
   ${userAnswers.description}
