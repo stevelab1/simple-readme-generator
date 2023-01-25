@@ -1,4 +1,4 @@
-# simple-readme-generator
+# Simple README Generator
   [![GitHub license](https://img.shields.io/github/license/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/blob/main/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/stargazers)
   ![GitHub top language](https://img.shields.io/github/languages/top/stevelab1/simple-readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/stevelab1/simple-readme-generator?style=flat&logo=appveyor)
@@ -9,8 +9,7 @@
   [![GitHub package version](https://img.shields.io/github/package-json/v/stevelab1/simple-readme-generator)
   
   ## Description 
-  GitHub: [@stevelab](https://github.com/stevelab1)
-
+  Sample description
 
   ## Table of Contents
   * [Installation](#installation)
@@ -21,11 +20,11 @@
   * [Questions](#questions) 
 ## Installation
 
-  x
+  npm i
 
   ## Usage
 
-  x
+  node index.js
 
   ## License
 
@@ -33,11 +32,11 @@
 
   ## Contributing
 
-  x
+  see Contributing.md
 
   ## Tests
 
-  x
+  npm test
 
   ## Questions
     
@@ -47,11 +46,11 @@
 
 
 [![GitHub avatar](https://github.com/stevelab1.png?size=40)](https://github.com/stevelab1)
-GitHub: ![GitHub username][@stevelab1](https://github.com/stevelab1)
+GitHub: [@stevelab1](https://github.com/stevelab1)
 
       
 
 
-Email: x
+Email: sample@gmail.com
 
       
