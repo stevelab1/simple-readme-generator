@@ -34,7 +34,7 @@ https://drive.google.com/file/d/1uZBhHqK6LH08tjWPOh4AB1DuTzUtR120/view?usp=shari
 
 ### Steps required to install project:
 
-1. Follow the instructions on GitHub on how to clone https://github.com/stevelab1/simple-readme-generator.git to your local machine, e.g. run the following command in your terminal, then `cd` into the resulting directory:
+1. Follow the instructions on GitHub on how to clone a repo to your local machine, e.g. run the following command in your terminal, then `cd` into the resulting directory:
 
 ```
 git clone https://github.com/stevelab1/simple-readme-generator.git
@@ -110,7 +110,7 @@ Issues on GitHub are used to track todos, bugs, feature requests, and more.
 
 1. Git
 1. A fork of the repo (for any contributions)
-1. A clone of the [weather-pickmeup](https://github.com/stevelab1/weather-pickmeup) repo on your local machine
+1. A clone of the repo on your local machine
 ## Contributing Guidelines
 
 ### Create a branch
