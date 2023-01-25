@@ -1,8 +1,15 @@
 # Simple README Generator
 
-## Description
+[![GitHub license](https://img.shields.io/github/license/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/blob/main/LICENSE)
+  [![GitHub stars](https://img.shields.io/github/stars/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/stargazers)
+  ![GitHub top language](https://img.shields.io/github/languages/top/stevelab1/simple-readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/stevelab1/simple-readme-generator?style=flat&logo=appveyor)
+  [![GitHub forks](https://img.shields.io/github/forks/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/network)
+  [![GitHub contributors](https://img.shields.io/github/contributors/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/graphs/contributors)
+  [![GitHub issues](https://img.shields.io/github/issues/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/issues)
+  [![GitHub pull requests](https://img.shields.io/github/issues-pr/stevelab1/simple-readme-generator)](https://github.com/stevelab1/simple-readme-generator/pulls)
+  ![GitHub package version](https://img.shields.io/github/package-json/v/stevelab1/simple-readme-generator)
 
-![badmath](https://img.shields.io/badge/JavaScript-100%25-%23)
+## Description
 
 Generate a standard README markdown file for your project from the command-line.
 
@@ -135,3 +142,5 @@ Trilogy
 [`axios`](https://www.npmjs.com/package/axios)
 
 ## License
+
+  This project is licensed under the MIT license.
