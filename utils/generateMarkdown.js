@@ -18,9 +18,9 @@ function generateMarkdown(userAnswers) {
   
   const installationSection = 
   `## Installation
-```
+
   ${userAnswers.installation}
-```
+
   `;
 
   const usageSection = 

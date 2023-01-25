@@ -78,78 +78,78 @@ const questions = [
     type: "input",
     name: "description",
     message: "Enter a brief description of your project:",
-    validate: descriptionInput => {
-        if (descriptionInput) {
-            return true;
-        }
-        else {
-            console.log("Please enter a description for your project!");
-            return false;
-        }
-    }
-},
-{
+    validate: (descriptionInput) => {
+      if (descriptionInput) {
+        return true;
+      } else {
+        console.log("Please enter a description for your project!");
+        return false;
+      }
+    },
+  },
+  {
     type: "input",
     name: "installation",
-    message: "Enter the installation instructions for your project:",
-    validate: installationInput => {
-        if (installationInput) {
-            return true;
-        }
-        else {
-            console.log("Please enter installation instructions for your project!");
-            return false;
-        }
-    }
-},
-{
+    message: "Enter any installation instructions for your project:",
+    default: "npm i",
+  },
+  {
+    type: "input",
+    name: "dependencies",
+    message: "Any dependencies to install?",
+    default: "npm i",
+  },
+  {
     type: "input",
     name: "usage",
     message: "Enter the usage instructions for your project:",
-    validate: usageInput => {
-        if (usageInput) {
-            return true;
-        }
-        else {
-            console.log("Please enter usage instructions for your project!");
-            return false;
-        }
-    }
-},
-{
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter usage instructions for your project!");
+        return false;
+      }
+    },
+  },
+  {
     type: "input",
     name: "contributing",
     message: "Enter the contributing guidelines for your project:",
-    validate: contributingInput => {
-        if (contributingInput) {
-            return true;
-        }
-        else {
-            console.log("Please enter contributing guidelines for your project!");
-            return false;
-        }
-    }
-},
-{
+    validate: (contributingInput) => {
+      if (contributingInput) {
+        return true;
+      } else {
+        console.log("Please enter contributing guidelines for your project!");
+        return false;
+      }
+    },
+  },
+  {
     type: "input",
     name: "tests",
     message: "Enter the test instructions for your project:",
-    validate: testsInput => {
-        if (testsInput) {
-            return true;
-        }
-        else {
-            console.log("Please enter test instructions for your project!");
-            return false;
-        }
-    }
-},
+    validate: (testsInput) => {
+      if (testsInput) {
+        return true;
+      } else {
+        console.log("Please enter test instructions for your project!");
+        return false;
+      }
+    },
+  },
   {
     type: "list",
     name: "license",
     message: "Select a license for your project:",
     choices: ["MIT", "GPLv3", "APACHE 2.0", "BSD 3", "None"],
     default: "MIT",
+  },
+  {
+    type: "input",
+    name: "email",
+    message:
+      "Enter an email if you would like users or contributors to be able to contact this way.",
   },
 ];
 
