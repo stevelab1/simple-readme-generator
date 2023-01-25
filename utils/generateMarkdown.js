@@ -5,6 +5,7 @@ function generateMarkdown(userAnswers) {
   const topSection = `# ${userAnswers.title}
   [![GitHub license](https://img.shields.io/github/license/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/blob/master/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/${userAnswers.github}/${userAnswers.repo})](https://github.com/${userAnswers.github}/${userAnswers.repo}/stargazers)
+  ![GitHub top language](https://img.shields.io/github/languages/top/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor)
   
   ## Description 
   ${userAnswers.description}
