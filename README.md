@@ -13,14 +13,6 @@
 
 Generate a standard README markdown file for your project from the command-line.
 
-## User Story
-
-As a developer, I want a README generator so that I can quickly create a professional README for a new project
-
-## Demo
-
-https://drive.google.com/file/d/1uZBhHqK6LH08tjWPOh4AB1DuTzUtR120/view?usp=sharing
-
 ## Table of Contents
 
 - [Installation](#installation)
