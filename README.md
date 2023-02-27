@@ -23,22 +23,7 @@ Generate a standard README markdown file for your project from the command-line.
 
 ## Installation
 
-### Steps required to install project:
-
-1. Follow the instructions on GitHub on how to clone a repo to your local machine, e.g. run the following command in your terminal, then `cd` into the resulting directory:
-
-```
-git clone https://github.com/stevelab1/simple-readme-generator.git
-```
-
-2. Make sure you have node installed on your machine. To check you have, type in to your terminal:
-
-```
-node -v
-```
-
-3. Type in the following command to install
-   the necessary dependencies:
+Install the necessary dependencies:
 
 ```
 npm i
@@ -48,13 +33,13 @@ npm i
 
 <!-- ### Instructions and examples for use: -->
 
-4. Invoke README Generator using the following command:
+1. Invoke README Generator using the following command:
 
 ```
 node index.js
 ```
 
-5. You will then be prompted for information to generate the README for your GitHub online repository via a series of questions that accept user input, including:
+2. You will then be prompted for information to generate the README for your GitHub online repository via a series of questions that accept user input, including:
 
 - GitHub username
 <!-- in future allow (or other online repository) -->
@@ -84,8 +69,7 @@ The program then generates a simple README.md file from your input with:
       * Tests
       * Questions
 
-6. Finally, find the generated README in the \generated folder
-
+3. Finally, find the generated README in the \generated folder
 
 ## Reporting issues
 
