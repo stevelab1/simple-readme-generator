@@ -77,11 +77,7 @@ The program then generates a simple README.md file from your input with:
 
 https://github.com/stevelab1/simple-readme-generator/issues
 
-Issues on GitHub are used to track todos, bugs, feature requests, and more.
-
 ## Credits
-
-Trilogy
 
 [`inquirer`](https://www.npmjs.com/package/inquirer)
 
